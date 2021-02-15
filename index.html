@@ -118,11 +118,11 @@
                 <form method="POST" data-netlify="true" data-netlify-rechapta="true">
                     <div class="spacing split">
                         <label for="name" style="margin-top: 2rem;">Name:</label>
-                        <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field">
+                        <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field" required>
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email__address" placeholder="Email-Adresse" class="input__field">
+                        <input type="email" name="email" id="email__address" placeholder="Email-Adresse" class="input__field" required>
                         <label for="message">Nachricht:</label>
-                        <textarea name="message" id="message__text" rows="10" placeholder="Ihre Nachricht..." class="input__field"></textarea>
+                        <textarea name="message" id="message__text" rows="10" placeholder="Ihre Nachricht..." class="input__field" required></textarea>
                         <br>
                         <label for="file">Datei auswählen (optional):</label>
                         <input type="file" name="file" id="file__attached" class="input__field">
