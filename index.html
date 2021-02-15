@@ -117,16 +117,16 @@
                 <p style="text-align: center;">Bei Fragen, Anregungen etc. schreiben Sie gerne eine Nachricht an <a href="mailto:fenyvesi.tamas31@gmail.com" target="_blank" class="link">emailadresse@gmail.com</a> oder nutzen Sie das nachfolgende Kontaktformular!<br><br></p>
                 <form method="POST" data-netlify="true" data-netlify-rechapta="true">
                     <div class="spacing split">
-                        <label for="name" style="margin-top: 2rem;">Name:</label>
+                        <label for="name" style="margin-top: 2rem;">Name: <span style="color: red;">*</span></label>
                         <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field" required>
-                        <label for="email">Email:</label>
+                        <label for="email">Email: <span style="color: red;">*</span></label>
                         <input type="email" name="email" id="email__address" placeholder="Email-Adresse" class="input__field" required>
-                        <label for="message">Nachricht:</label>
+                        <label for="message">Nachricht: <span style="color: red;">*</span></label>
                         <textarea name="message" id="message__text" rows="10" placeholder="Ihre Nachricht..." class="input__field" required></textarea>
                         <br>
-                        <label for="file">Datei auswählen (optional):</label>
+                        <label for="file">Datei auswählen:</label>
                         <input type="file" name="file" id="file__attached" class="input__field">
-                        <div data-netlify-rechapta="true"></div>
+                        <p style="color: red;">* benötigte Felder</p>
                         <input type="submit" value="Senden" class="btn">
                     </div>
                 </form>
