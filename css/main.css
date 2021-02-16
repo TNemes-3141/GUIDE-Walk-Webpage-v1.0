@@ -1,5 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/akrobat");
-@import url("http://fonts.cdnfonts.com/css/bree-serif-sb-2");
+/*@import url("http://fonts.cdnfonts.com/css/bree-serif-sb-2");*/
 
 /* --- General definitions --- */
 * {
@@ -53,6 +53,12 @@ label {
   font-size: 1.3em;
   text-transform: uppercase;
   color: #444;
+}
+@font-face {
+    font-family: 'Bree Serif Sb';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Bree Serif Sb'), url('../assets/fonts/Bree_Serif_SemiBold.woff') format('woff');
 }
 /* --- Class definitions --- */
 .container {
