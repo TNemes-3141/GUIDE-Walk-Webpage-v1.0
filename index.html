@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="./images/logo_icon.png" />
     <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -115,7 +116,7 @@
             <div class="container" style="padding-bottom: 2em;">
                 <h2 class="section-title">Kontakt</h2>
                 <p style="text-align: center;">Bei Fragen, Anregungen etc. schreiben Sie gerne eine Nachricht an <a href="mailto:fenyvesi.tamas31@gmail.com" target="_blank" class="link">emailadresse@gmail.com</a> oder nutzen Sie das nachfolgende Kontaktformular!<br><br></p>
-                <form method="POST" data-netlify="true" data-netlify-rechapta="true">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-rechapta="true">
                     <div class="spacing split">
                         <label for="name" style="margin-top: 2rem;">Name: <span style="color: red;">*</span></label>
                         <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field" required>
@@ -126,7 +127,7 @@
                         <br>
                         <label for="file">Datei auswählen:</label>
                         <input type="file" name="file" id="file__attached" class="input__field">
-                        <p style="color: red;">* benötigte Felder</p>
+                        <div class="g-recaptcha" data-sitekey="6LdV_FoaAAAAAM-tGYY8roeOnESfFpBz2ZKUCt-9"></div>
                         <input type="submit" value="Senden" class="btn">
                     </div>
                 </form>
