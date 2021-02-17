@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="de-de">
+<html lang="de-DE">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="guide, guidewalk, blind, blindenführer, blindenführersystem, assistenzgerät, jugend-forscht, ki, cv" />
+    <meta name="description" content="Das autonome Blindenführersystem mit KI">
     <title>GUIDE-Walk 2.0</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
     <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./scripts/dropdown_menu.js"></script>
 </head>
 
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#project" class="nav__link" onclick="closeMenu()">Projekt</a></li>
+            <li class="nav__item"><a href="#materials" class="nav__link"onclick="closeMenu()">Materialien</a></li>
+            <li class="nav__item"><a href="#presentation" class="nav__link"onclick="closeMenu()">Präsentation</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link"onclick="closeMenu()">Über</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link"onclick="closeMenu()">Kontakt</a></li>
+        </ul>
+    </nav>
     <!-- Page header -->
     <header class="head">
         <div class="container spacing" id="head-container">
