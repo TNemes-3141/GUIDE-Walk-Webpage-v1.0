@@ -135,7 +135,7 @@ label {
   padding: 15em 0;
   background-color: #222;
   background-image: radial-gradient(rgba(68, 68, 68, 0.1), rgba(17, 17, 17, 1)),
-    url("../images/header_backgr.jpg");
+    url("../assets/images/header_backgr.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ label {
   .material__img {
     float: left;
     width: 40%;
-    shape-outside: url(../images/article1.png);
+    shape-outside: url(../assets/images/article1.png);
     shape-margin: 5em;
   }
   .material__title {
@@ -219,16 +219,16 @@ label {
     float: right;
   }
   #a2 {
-    shape-outside: url(../images/article2.png);
+    shape-outside: url(../assets/images/article2.png);
   }
   #a3 {
-    shape-outside: url(../images/article3.png);
+    shape-outside: url(../assets/images/article3.png);
   }
   #a4 {
-    shape-outside: url(../images/article4.png);
+    shape-outside: url(../assets/images/article4.png);
   }
   #a5 {
-    shape-outside: url(../images/article5.png);
+    shape-outside: url(../assets/images/article5.png);
   }
   #footer__element__left {
     text-align: left;
