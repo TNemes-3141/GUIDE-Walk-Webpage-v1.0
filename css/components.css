@@ -1,0 +1,62 @@
+.head-sub {
+  text-align: left;
+  padding: 8em 0;
+}
+.header__link {
+  color: black;
+  text-decoration: none;
+  font-family: "Akrobat ExtraBold", sans-serif;
+  transition: opacity 0.25s ease-out;
+}
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.7;
+}
+.component__img {
+  max-width: 20em;
+  z-index: 1;
+}
+.component__desc {
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background: #009668;
+  background: -moz-linear-gradient(-45deg, #009668 0%, #007651 100%);
+  background: -webkit-linear-gradient(-45deg, #009668 0%, #007651 100%);
+  background: linear-gradient(135deg, #009668 0%, #007651 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009668', endColorstr='#007651',GradientType=1);
+  border-radius: 2em;
+  color: white;
+  font-style: italic;
+}
+#instruction {
+  font-family: "Akrobat ExtraLight", sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  color: #777;
+}
+@media screen and (max-width: 720px) {
+  .component__desc {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #instruction {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .component__desc {
+    left: -30%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    margin-left: 2em;
+  }
+  #i1:hover ~ #c1, #i2:hover ~ #c2, #i3:hover ~ #c3, #i4:hover ~ #c4, #i5:hover ~ #c5, #i6:hover ~ #c6, #i7:hover ~ #c7, #i8:hover ~ #c8, #i9:hover ~ #c9 {
+    left: 0;
+    opacity: 1;
+  }
+}

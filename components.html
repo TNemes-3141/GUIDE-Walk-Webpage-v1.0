@@ -9,14 +9,81 @@
     <meta name="description" content="Wie ist der GUIDE-Walk aufgebaut?">
     <title>Aufbau – GUIDE-Walk 2.0</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
     <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
     <script src="./scripts/dropdown_menu.js"></script>
 </head>
 <body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link" onclick="closeMenu()">Zurück zur Hauptseite</a></li>
+        </ul>
+    </nav>
     <!-- Page header -->
-    <header>
-        <a href="index.html">Zurück zur Hauptseite</a>
+    <header class="head-sub">
+        <div class="container">
+            <p><a href="index.html" class="header__link"><span class="fas fa-arrow-alt-circle-left"></span> Zurück zur Hauptseite</a></p>
+        </div>
     </header>
+    <!-- Page main section -->
+    <main>
+        <hr>
+        <section>
+            <div class="container spacing">
+                <h2 class="section-title">Aufbau</h2>
+                <p style="text-align: center;">Damit es für den alltäglichen Gebrauch geeignet ist und um ein portables Design zu ermöglichen, kommt der <span class="emphasis">GUIDE-Walk</span> mit möglichst wenigen und kompakten Komponenten aus, die im Verhältnis zu ihrer Größe am effizientesten sind. Folgende Bestandteile sind in der Hülle untergebracht:</p>
+                <p id="instruction">(Mit der Maus über die Komponenten fahren, um Details zu lesen)</p>
+                <div class="split">
+                    <img src="./assets/images/component8.png" alt="Component 8" class="hover__img component__img" id="i1">
+                    <p class="component__desc" id="c1">Alle Warnungen und Hinweise werden mit einer Sprachausgabe an den Träger weitergeleitet. Diese speziellen Bone-Conduction-Kopfhörer liegen auf dem Gehörknochen auf und beeinträchtigen somit das Hörvermögen des blinden Trägers nicht.</p>
+                    <img src="./assets/images/component7.png" alt="Component 7" class="hover__img component__img" id="i2">
+                    <p class="component__desc" id="c2">Die Abdeckung der Hauptbox ist mit Magneten an der Unterseite fixiert und somit jederzeit einfach abnehmbar. Sie besitzt Aussparungen für die Kamera, den LiDAR und den Bewegungssensor.</p>
+                    <img src="./assets/images/component6.png" alt="Component 6" class="hover__img component__img" id="i3">
+                    <p class="component__desc" id="c3">Da der Jetson Nano keine Kopfhörerbuchse besitzt, müssen die Sounds erst durch diese externe Soundkarte abgegeben werden, um schließlich bei den Kopfhörern anzukommen.</p>
+                    <img src="./assets/images/component5.png" alt="Component 5" class="hover__img component__img" id="i4">
+                    <p class="component__desc" id="c4">Für die Aufnahme der Bilder ist das Kameramodul zuständig, welches fortlaufend mit 30 Bildern pro Sekunde operiert und die Inputs für die KI stellt. Es erreicht dabei einen konstanten Stream mit einer Auflösung von 720p (1280x720px).</p>
+                    <img src="./assets/images/component4.png" alt="Component 4" class="hover__img component__img" id="i5">
+                    <p class="component__desc" id="c5">Parallel zur KI-Erkennung misst der LiDAR-Sensor mit Laserstrahlen universell die Entfernung zu potentiellen Hindernissen vor dem Träger und signalisiert ihm durch Pieptöne, wenn er etwas zu nahe kommt (ähnlich wie der Parkassistent im Auto).</p>
+                    <img src="./assets/images/component3.png" alt="Component 3" class="hover__img component__img" id="i6">
+                    <p class="component__desc" id="c6">Dieser Bewegungssensor, welcher Beschleunigung, Winkel-
+                    änderung, Magnetfeldstärke sowie Außentemperatur und Luftdruck messen kann, zeichnet das Bewegungsprofil des Trägers auf und leitet es an den Computer weiter. Dies hilft, die Genauigkeit der KI zu optimieren.</p>
+                    <img src="./assets/images/component2.png" alt="Component 2" class="hover__img component__img" id="i7">
+                    <p class="component__desc" id="c7">Das Herzstück des Geräts der Jetson Nano von Nvidia, ein leistungsstarker, Linux-basierter
+                    Single-Board-Computer, welches speziell für KI-Anwendungen konzipiert wurde. Zu seinen Vorteilen gehören Hardware-beschleunigte KI und integrierte Software und Frameworks für KI-Applikationen. Auf diesem Hauptcomputer läuft das Programm, der die Bilder auswertet und die Sensoren bedient.</p>
+                    <img src="./assets/images/component1.png" alt="Component 1" class="hover__img component__img" id="i8">
+                    <p class="component__desc" id="c8">Das Gehäuse bietet den elektrischen Komponenten eine sichere Hülle vor Belastung und Wetter. Auch macht es das Gerät überhaupt tragfähig. Diese finale Iteration wurde mit dem 3D-Drucker gedruckt und ist mit tastbaren Hinweisen wie Rillen und Blindenschrift sowie einem praktischen Magnetverschluss versehen. Die Hauptbox misst 12,9x12x6,4cm bei einem Gewicht von ca. 250g.</p>
+                </div>
+                <h3 style="text-align: center; font-family: Akrobat ExtraBold, sans-serif; font-size: 2rem; text-transform: uppercase; color: #444;">Akkupack:</h3>
+                <div class="split">
+                    <img src="./assets/images/component9.png" alt="Component 0" class="hover__img component__img" id="i9">
+                    <p class="component__desc" id="c9">Die Stromversorgung des Geräts wird durch dieses separate Akkupack gewährleistet, welches einfach zu bedienen ist und in eine Tasche gelegt bzw. auf den Gürtel geschnallt werden kann. So hat der blinde Träger beide Hände frei, um auch die Hilfsmittel zu verwenden, mit denen er bereits vertraut ist. Der Akku hat eine Kapazität von 8300 mAh und wiegt ca. 655g.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer class="foot" id="foot">
+        <div class="container">
+            <div class="split">
+                <p id="footer__element__left"><a href="#" class="footer__link"><span class="fas fa-arrow-alt-circle-up"></span> Zurück zum Seitenanfang</a></p>
+                <p id="footer__element__right">By: &copy; 2021 Tamas Nemes<br><a href="https://github.com/Totemi1324" target="_blank" class="footer__link"><span class="fab fa-github icon"></span></a> <a href="https://www.youtube.com/channel/UCy364Kb1nLAqbNyRjQZNVqw" target="_blank" class="footer__link"><span class="fab fa-youtube icon"></span></a> <a href="https://twitter.com/LightcraftStud1" target="_blank" class="footer__link"><span class="fab fa-twitter icon"></span></a></p>
+            </div>
+            <div>
+                <p style="text-align: center;">Sponsoren und Unterstützer:</p>
+                <img src="./assets/images/sponsors.png" alt="Sponsors" class="hover__img">
+                <!-- <a href=""><img src="./images/sponsor1.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor2.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor3.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor4.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor5.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor6.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
