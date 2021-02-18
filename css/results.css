@@ -1,0 +1,40 @@
+.head-sub {
+  text-align: left;
+  padding: 8em 0;
+}
+.header__link {
+  color: black;
+  text-decoration: none;
+  font-family: "Akrobat ExtraBold", sans-serif;
+  transition: opacity 0.25s ease-out;
+}
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.7;
+}
+
+.gallery {
+  margin: 3em 5em;
+}
+.gallery img {
+  display: inline-block;
+  padding: 1em;
+  transition: all 0.25s ease-out;
+}
+.gallery img:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.split-g {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.split-g > * {
+  flex-basis: 25%;
+  min-width: 15em;
+  position: relative;
+}
