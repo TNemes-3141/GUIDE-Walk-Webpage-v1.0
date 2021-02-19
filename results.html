@@ -15,6 +15,15 @@
     <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
     <script src="./scripts/dropdown_menu.js"></script>
     <script src="./scripts/lightbox.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM2FW28KFE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KM2FW28KFE');
+    </script>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -40,16 +49,16 @@
         <section>
             <div class="container spacing">
                 <h2 class="section-title">Ergebnisse</h2>
-                <p style="text-align: center;">Im Laufe des Entwicklungsprozesses wurden zum <span class="emphasis">GUIDE-Walk</span> und dessen Funktionen mehrere Tests und Auswertungen erstellt, deren Ergebnisse in den folgenden Diagrammen dargestellt ist. Stöbern Sie durch die Bildergalerie für Informationen zu Genauigkeit, Akkulaufzeit...</p>
+                <p style="text-align: center;">Im Laufe des Entwicklungsprozesses wurden zum <span class="emphasis">GUIDE-Walk</span> und dessen Funktionen mehrere Tests und Auswertungen erstellt, deren Ergebnisse in den folgenden Diagrammen dargestellt sind. Stöbern Sie durch die Bildergalerie für Informationen zu Genauigkeit, Akkulaufzeit...</p>
             </div>
             <div class="gallery split-g">
                 <a href="./assets/gallery/ai_accuracy.png" data-lightbox="results_gallery" data-title="GENAUIGKEIT DER KI – Die top-1-Genauigkeit des finalen Netzwerks (MobileNet-SSD v2) beträgt 62,8% am Testdataset und 51,7% an einem separaten Dataset mit isolierten Objekten. Dies klingt zwar wenig, der Wert konnte jedoch mit Rauschfilterung und Boxensortierung erheblich gesteigert werden. Die Genauigkeit wurde mit drei anderen, vergleichbaren Netzwerken verglichen (davon zwei mit SSD-Architektur und eins ohne)."><img src="./assets/gallery/ai_accuracy-small.png" alt="AI accuracy"></a>
-                <a href="./assets/gallery/ai_performance.png" data-lightbox="results_gallery"><img src="./assets/gallery/ai_performance-small.png" alt="AI performance"></a>
-                <a href="./assets/gallery/overall_performance.png" data-lightbox="results_gallery"><img src="./assets/gallery/overall_performance-small.png" alt="Overall performance"></a>
-                <a href="./assets/gallery/overall_batterylife.png" data-lightbox="results_gallery"><img src="./assets/gallery/overall_batterylife-small.png" alt="Battery life"></a>
-                <a href="./assets/gallery/distance_30cm.png" data-lightbox="results_gallery"><img src="./assets/gallery/distance_30cm-small.png" alt="Measuring presicion (30cm)"></a>
-                <a href="./assets/gallery/distance_2m.png" data-lightbox="results_gallery"><img src="./assets/gallery/distance_2m-small.png" alt="Measuring presicion (2m)"></a>
-                <a href="./assets/gallery/distance_5m.png" data-lightbox="results_gallery"><img src="./assets/gallery/distance_5m-small.png" alt="Measuring presicion (5m)"></a>
+                <a href="./assets/gallery/ai_performance.png" data-lightbox="results_gallery" data-title="PERFORMANCE DER KI – Mit einem einfachen FPS-Counter wurde die Geschwindigkeit der KI-Netzwerke am Jetson Nano getestet. Dabei wurde gemessen, wie viele Bilder pro Sekunde das Netzwerk mit und ohne GPU-Beschleunigung verarbeiten kann. MobileNet-SSD v2 ist zwar in dieser Messung nicht an der Spitze, die schnellere Alternative ist allerdings deutlich ungenauer. Es erreicht einen immer noch sehr guten Wert von 9 FPS."><img src="./assets/gallery/ai_performance-small.png" alt="AI performance"></a>
+                <a href="./assets/gallery/overall_performance.png" data-lightbox="results_gallery" data-title="PERFORMANCE DES GERÄTS – Um das fertige Gerät auf seine Leistung zu testen, wurde ebenfalls mit einem FPS-Counter gemessen, wie sich die FPS-Anzahl über eine Dauer von 100 Frames entwickelt. Die Daten beziehen sich hierbei auf die Programmdurchläufe des Main-Threads vom Hauptprogramm. Mit GPU ist der Wert weniger stabil, bleibt aber trotzdem in einem Bereich von 6-7 FPS, was einer duchschnittlichen Reaktionszeit von 0,15s entspricht."><img src="./assets/gallery/overall_performance-small.png" alt="Overall performance"></a>
+                <a href="./assets/gallery/overall_batterylife.png" data-lightbox="results_gallery" data-title="AKKULAUFZEIT – Zur Messung der Akkulaufzeit wurde das Gerät in verschiedene Betriebsmodi geschaltet und der Ladestand des Akkus über Zeit beobachtet. Das Experiment ergab eine durchschnittliche Akkulaufzeit von 7-8 Stunden, was für die meisten Anwendungen auf der Straße mehr als ausreichend ist. Durch einen eingebauten Standby-Modus kann die Laufzeit zusätlich um etwa 2,5 Stunden gesteigert werden."><img src="./assets/gallery/overall_batterylife-small.png" alt="Battery life"></a>
+                <a href="./assets/gallery/distance_30cm.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (30CM) – In den nachfolgenden Experimenten wurde die Genauigkeit der Messungen des LiDAR-Sensors ermittelt, welche nach Herstellerangaben +-2,5cm beträgt. Der Sensor wurde in verschiedenen Abständen vor eine Wand platziert und über 10 Sekunden hinweg 100-mal die Entfernung gemessen."><img src="./assets/gallery/distance_30cm-small.png" alt="Measuring presicion (30cm)"></a>
+                <a href="./assets/gallery/distance_2m.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (2M) – Hierbei ist interessanterweise zu erkennen, dass die Distanz vom Sensor tendenziell als zu weit gemessen wird, wobei diese Abweichung vom tatsächlichen Wert mit größer werdender Distanz abnimmt. Die Schwankungen sind im Vergleich zu bspw. einem Ultraschallsensor sehr gering, zwischen 1-2cm."><img src="./assets/gallery/distance_2m-small.png" alt="Measuring presicion (2m)"></a>
+                <a href="./assets/gallery/distance_5m.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (5M) – Die Genauigkeit, also die Abweichung vom Kontrollwert, beläuft sich insgesamt auf +-3cm. Sie entspricht daher ziemlich genau den Angaben des Herstellers und ist gut für den Einsatz im Blindenführersystem geeignet."><img src="./assets/gallery/distance_5m-small.png" alt="Measuring presicion (5m)"></a>
             </div>
         </section>
     </main>

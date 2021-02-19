@@ -381,6 +381,7 @@ nav {
 .aboutme__img {
   margin-top: 2rem;
   max-width: 25em;
+  max-height: 25em;
 }
 #contact {
   background: #ddd;

@@ -1,0 +1,33 @@
+.head-sub {
+  text-align: left;
+  padding: 8em 0;
+}
+.header__link {
+  color: black;
+  text-decoration: none;
+  font-family: "Akrobat ExtraBold", sans-serif;
+  transition: opacity 0.25s ease-out;
+}
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.7;
+}
+
+.btn {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+@media screen and (min-width: 720px) {
+    .material__img {
+        width: 30%;
+    }
+    #m1 {
+        shape-outside: url(../assets/images/material1.png);
+    }
+    #m2 {
+        shape-outside: url(../assets/images/material2.png);
+    }
+    #m3 {
+        shape-outside: url(../assets/images/material3.png);
+    }
+}
