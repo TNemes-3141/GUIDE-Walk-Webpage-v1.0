@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="guide, guidewalk, blind, blindenführer, blindenführersystem, assistenzgerät, jugend-forscht, ki, cv" />
+    <meta name="description" content="How is the GUIDE walk structured?">
+    <title>Components – GUIDE-Walk 2.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
+    <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
+    <script src="./scripts/dropdown_menu.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM2FW28KFE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KM2FW28KFE');
+    </script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="en.html" class="nav__link" onclick="closeMenu()">Back to the homepage</a></li>
+        </ul>
+    </nav>
+    <!-- Page header -->
+    <header class="head-sub">
+        <div class="container">
+            <p><a href="en.html" class="header__link"><span class="fas fa-arrow-alt-circle-left"></span> Back to the homepage</a></p>
+        </div>
+    </header>
+    <!-- Page main section -->
+    <main>
+        <hr>
+        <section>
+            <div class="container spacing">
+                <h2 class="section-title">Components</h2>
+                <p style="text-align: center;">To enable a portable design for everyday use, the <span class="emphasis">GUIDE-Walk</span> uses as few and compact components as possible, which are most efficient in relation to their size. The following components are housed in the case: </p><p id="instruction">(hover the mouse over the components to read details)</p>
+                <div class="split">
+                    <img src="./assets/images/component8.png" alt="Component 8" class="hover__img component__img" id="i1">
+                    <p class="component__desc" id="c1">All warnings and notifications are passed on to the wearer through a speech output. These special bone conduction headphones rest on the hearing bone and therefore do not impair the hearing ability of the blind wearer.</p>
+                    <img src="./assets/images/component7.png" alt="Component 7" class="hover__img component__img" id="i2">
+                    <p class="component__desc" id="c2">The cover of the main box is fixed with magnets on the underside and can therefore be easily removed at any time. It has cutouts for the camera, the LiDAR and the motion sensor.</p>
+                    <img src="./assets/images/component6.png" alt="Component 6" class="hover__img component__img" id="i3">
+                    <p class="component__desc" id="c3">Since the Jetson Nano does not have a headphone jack, the audio messages first have to be passed through this external sound card in order to finally reach the headphones.</p>
+                    <img src="./assets/images/component5.png" alt="Component 5" class="hover__img component__img" id="i4">
+                    <p class="component__desc" id="c4">The camera module is responsible for recording the images, continuously operates at 30 images per second and provides the inputs for the AI. It achieves a constant stream with a resolution of 720p (1280x720px).</p>
+                    <img src="./assets/images/component4.png" alt="Component 4" class="hover__img component__img" id="i5">
+                    <p class="component__desc" id="c5">In parallel to the AI detection, the LiDAR sensor uses laser beams to universally measure the distance to potential obstacles in front of the wearer. Beeping signals note when he comes too close to something (similar to the parking assistant in cars).</p>
+                    <img src="./assets/images/component3.png" alt="Component 3" class="hover__img component__img" id="i6">
+                    <p class="component__desc" id="c6">This motion sensor, which contains an accelerometer, gyroscope, magnetometer and a barometer for temperature and pressure, records the movement profile of the wearer and forwards it to the computer. This helps to optimize the accuracy of the AI.</p>
+                    <img src="./assets/images/component2.png" alt="Component 2" class="hover__img component__img" id="i7">
+                    <p class="component__desc" id="c7">The heart of the device is the Jetson Nano from Nvidia, a powerful, Linux-based single-board computer, which was expicitly designed for AI applications. Its benefits include hardware accelerated AI and integrated frameworks for machine learning. The program that evaluates the images and operates the sensors runs on this main computer.</p>
+                    <img src="./assets/images/component1.png" alt="Component 1" class="hover__img component__img" id="i8">
+                    <p class="component__desc" id="c8">The housing offers the electrical components a safe cover against weather and other environment factors. In the first place, it makes the device wearable. This final iteration was printed in 3D and is provided with tactile indications such as grooves and braille as well as a practical magnetic closure. The main box measures 12.9x12x6.4cm with a weight of approx. 250g.</p>
+                </div>
+                <h3 style="text-align: center; font-family: Bree Serif Sb, sans-serif; font-size: 2rem; text-transform: uppercase; color: #444;">Powerbank:</h3>
+                <div class="split">
+                    <img src="./assets/images/component9.png" alt="Component 0" class="hover__img component__img" id="i9">
+                    <p class="component__desc" id="c9">The power supply of the device is ensured by this separate battery pack, which is easy to use and can be placed in a pocket or strapped onto the belt. This means that the blind wearer has both hands free to use the aids which he is already familiar with. The battery has a capacity of 8300 mAh and weighs approx. 655g.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer class="foot" id="foot">
+        <div class="container">
+            <div class="split">
+                <p id="footer__element__left"><a href="#" class="footer__link"><span class="fas fa-arrow-alt-circle-up"></span> Back to top</a></p>
+                <p id="footer__element__right">By: &copy; 2021 Tamas Nemes<br><a href="https://github.com/Totemi1324" target="_blank" class="footer__link"><span class="fab fa-github icon"></span></a> <a href="https://www.youtube.com/channel/UCy364Kb1nLAqbNyRjQZNVqw" target="_blank" class="footer__link"><span class="fab fa-youtube icon"></span></a> <a href="https://twitter.com/LightcraftStud1" target="_blank" class="footer__link"><span class="fab fa-twitter icon"></span></a> <a href="https://www.instagram.com/guidewalk.geraet/" target="_blank" class="footer__link"><span class="fab fa-instagram icon"></span></a></p>
+            </div>
+            <div>
+                <p style="text-align: center;">Sponsors and supporters:</p>
+                <img src="./assets/images/sponsors.png" alt="Sponsors" class="hover__img">
+                <!-- <a href=""><img src="./images/sponsor1.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor2.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor3.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor4.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor5.png" alt=""></a>
+                    <a href=""><img src="./images/sponsor6.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

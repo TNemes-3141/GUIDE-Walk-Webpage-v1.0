@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="guide, guidewalk, blind, blindenführer, blindenführersystem, assistenzgerät, jugend-forscht, ki, cv" />
+    <meta name="description" content="Explanation of the structure of the AI network">
+    <title>The AI – GUIDE-Walk 2.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ai-network.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
+    <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
+    <script src="./scripts/dropdown_menu.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM2FW28KFE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KM2FW28KFE');
+    </script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="en.html" class="nav__link" onclick="closeMenu()">Back to the homepage</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Page header -->
+    <header class="head-sub">
+        <div class="container">
+            <p style="text-align: left;"><a href="en.html" class="header__link"><span class="fas fa-arrow-alt-circle-left"></span> Back to the homepage</a></p>
+        </div>
+    </header>
+    <!-- Main section -->
+    <main>
+        <hr>
+        <section>
+            <div class="container spacing">
+                <h2 class="section-title">The AI</h2>
+                <p>The main feature of the <span class = "emphasis">GUIDE-Walk</span> is the artificial intelligence for object detection, which is supplemented by the other sensors. The AI recognizes 10 different classes in the images of the camera <i>(pedestrians, cars, bicycles, motorcycles, buses, chairs, benches, bins, red and green pedestrian lights)</i> and sorts them according to their position and importance. If something comes too close, the device can warn the wearer accordingly by means of a voice output.<br><br>I decided on using the modern object detection network MobileNetV2, as it has the highest accuracy of comparable lightweight models. This is combined with an SSD addition, which goes back to a <a href="https://arxiv.org/abs/1512.02325" target="_blank" class="link">paper</a> by Wei Liu and which makes it possible to process images much faster and more efficiently.</p>
+                <div style="display: block; margin-left: auto; margin-right: auto; max-width: 25em;">
+                    <img src="./assets/images/ai_structure.png" alt="">
+                    <p class="img__desc">Bild: SSD: Single Shot MultiBox Detector - Liu et al. S. 4 <a href="https://arxiv.org/pdf/1512.02325.pdf" target="_blank">(arXiv)</a></p>
+                </div>
+                <p>Such an SSD network consists of a support network and the SSD add-on. The support network generates a feature map from the input, which is divided into a grid by the SSD add-on. For each tile, a certain number of bounding boxes with fixed aspect ratios is generated, which are then checked for accuracy. After further filtering by non-maxima suppression and the removal of duplicates, the best 100 detections are output.</p>
+                <h3 style="text-align: center; font-family: Bree Serif Sb, sans-serif; font-size: 2rem; text-transform: uppercase; color: #444;">Demonstration:</h3>
+                <div class="split spacing">
+                    <p>This video shows how the AI works. The recordings come from the integrated camera in the housing, which are then evaluated by the implemented AI network:</p>
+                    <div class="video__wrapper">
+                        <div>
+                            <iframe src="https://www.youtube.com/embed/RQvaHC9aPwA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer class="foot" id="foot">
+        <div class="container">
+            <div class="split">
+                <p id="footer__element__left"><a href="#" class="footer__link"><span
+                            class="fas fa-arrow-alt-circle-up"></span> Back to top</a></p>
+                <p id="footer__element__right">By: &copy; 2021 Tamas Nemes<br><a href="https://github.com/Totemi1324"
+                        target="_blank" class="footer__link"><span class="fab fa-github icon"></span></a> <a
+                        href="https://www.youtube.com/channel/UCy364Kb1nLAqbNyRjQZNVqw" target="_blank"
+                        class="footer__link"><span class="fab fa-youtube icon"></span></a> <a
+                        href="https://twitter.com/LightcraftStud1" target="_blank" class="footer__link"><span class="fab fa-twitter icon"></span></a> <a href="https://www.instagram.com/guidewalk.geraet/" target="_blank" class="footer__link"><span class="fab fa-instagram icon"></span></a></p>
+            </div>
+            <div>
+                <p style="text-align: center;">Sponsors and supporters:</p>
+                <img src="./assets/images/sponsors.png" alt="Sponsors" class="hover__img">
+                <!-- <a href=""><img src="./images/sponsor1.png" alt=""></a>
+                            <a href=""><img src="./images/sponsor2.png" alt=""></a>
+                            <a href=""><img src="./images/sponsor3.png" alt=""></a>
+                            <a href=""><img src="./images/sponsor4.png" alt=""></a>
+                            <a href=""><img src="./images/sponsor5.png" alt=""></a>
+                            <a href=""><img src="./images/sponsor6.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="guide, guidewalk, blind, blindenführer, blindenführersystem, assistenzgerät, jugend-forscht, ki, cv" />
+    <meta name="description" content="Results from experiments and analyzes of the device">
+    <title>Results – GUIDE-Walk 2.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
+    <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
+    <script src="./scripts/dropdown_menu.js"></script>
+    <script src="./scripts/lightbox.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM2FW28KFE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KM2FW28KFE');
+    </script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="en.html" class="nav__link" onclick="closeMenu()">Back to the homepage</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Page header -->
+    <header class="head-sub">
+        <div class="container">
+            <p><a href="en.html" class="header__link"><span class="fas fa-arrow-alt-circle-left"></span> Back to the homepage</a></p>
+        </div>
+    </header>
+    <!-- Page main section -->
+    <main>
+        <hr>
+        <section>
+            <div class="container spacing">
+                <h2 class="section-title">Results</h2>
+                <p style="text-align: center;">In the course of the development process, several tests and evaluations were made for the <span class="emphasis">GUIDE-Walk</span> and its functions, the results of which are shown in the following diagrams. Browse through the image gallery for information on accuracy, battery life and many more. Warning: The diagrams and descriptions may not be fully translated yet!</p>
+            </div>
+            <div class="gallery split-g">
+                <a href="./assets/gallery/ai_accuracy.png" data-lightbox="results_gallery" data-title="GENAUIGKEIT DER KI – Die top-1-Genauigkeit des finalen Netzwerks (MobileNet-SSD v2) beträgt 62,8% am Testdataset und 51,7% an einem separaten Dataset mit isolierten Objekten. Dies klingt zwar wenig, der Wert konnte jedoch mit Rauschfilterung und Boxensortierung erheblich gesteigert werden. Die Genauigkeit wurde mit drei anderen, vergleichbaren Netzwerken verglichen (davon zwei mit SSD-Architektur und eins ohne)."><img src="./assets/gallery/ai_accuracy-small.png" alt="AI accuracy"></a>
+                <a href="./assets/gallery/ai_performance.png" data-lightbox="results_gallery" data-title="PERFORMANCE DER KI – Mit einem einfachen FPS-Counter wurde die Geschwindigkeit der KI-Netzwerke am Jetson Nano getestet. Dabei wurde gemessen, wie viele Bilder pro Sekunde das Netzwerk mit und ohne GPU-Beschleunigung verarbeiten kann. MobileNet-SSD v2 ist zwar in dieser Messung nicht an der Spitze, die schnellere Alternative ist allerdings deutlich ungenauer. Es erreicht einen immer noch sehr guten Wert von 9 FPS."><img src="./assets/gallery/ai_performance-small.png" alt="AI performance"></a>
+                <a href="./assets/gallery/overall_performance.png" data-lightbox="results_gallery" data-title="PERFORMANCE DES GERÄTS – Um das fertige Gerät auf seine Leistung zu testen, wurde ebenfalls mit einem FPS-Counter gemessen, wie sich die FPS-Anzahl über eine Dauer von 100 Frames entwickelt. Die Daten beziehen sich hierbei auf die Programmdurchläufe des Main-Threads vom Hauptprogramm. Mit GPU ist der Wert weniger stabil, bleibt aber trotzdem in einem Bereich von 6-7 FPS, was einer duchschnittlichen Reaktionszeit von 0,15s entspricht."><img src="./assets/gallery/overall_performance-small.png" alt="Overall performance"></a>
+                <a href="./assets/gallery/overall_batterylife.png" data-lightbox="results_gallery" data-title="AKKULAUFZEIT – Zur Messung der Akkulaufzeit wurde das Gerät in verschiedene Betriebsmodi geschaltet und der Ladestand des Akkus über Zeit beobachtet. Das Experiment ergab eine durchschnittliche Akkulaufzeit von 7-8 Stunden, was für die meisten Anwendungen auf der Straße mehr als ausreichend ist. Durch einen eingebauten Standby-Modus kann die Laufzeit zusätlich um etwa 2,5 Stunden gesteigert werden."><img src="./assets/gallery/overall_batterylife-small.png" alt="Battery life"></a>
+                <a href="./assets/gallery/distance_30cm.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (30CM) – In den nachfolgenden Experimenten wurde die Genauigkeit der Messungen des LiDAR-Sensors ermittelt, welche nach Herstellerangaben +-2,5cm beträgt. Der Sensor wurde in verschiedenen Abständen vor eine Wand platziert und über 10 Sekunden hinweg 100-mal die Entfernung gemessen."><img src="./assets/gallery/distance_30cm-small.png" alt="Measuring presicion (30cm)"></a>
+                <a href="./assets/gallery/distance_2m.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (2M) – Hierbei ist interessanterweise zu erkennen, dass die Distanz vom Sensor tendenziell als zu weit gemessen wird, wobei diese Abweichung vom tatsächlichen Wert mit größer werdender Distanz abnimmt. Die Schwankungen sind im Vergleich zu bspw. einem Ultraschallsensor sehr gering, zwischen 1-2cm."><img src="./assets/gallery/distance_2m-small.png" alt="Measuring presicion (2m)"></a>
+                <a href="./assets/gallery/distance_5m.png" data-lightbox="results_gallery" data-title="MESSGENAUIGKEIT (5M) – Die Genauigkeit, also die Abweichung vom Kontrollwert, beläuft sich insgesamt auf +-3cm. Sie entspricht daher ziemlich genau den Angaben des Herstellers und ist gut für den Einsatz im Blindenführersystem geeignet."><img src="./assets/gallery/distance_5m-small.png" alt="Measuring presicion (5m)"></a>
+            </div>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer class="foot" id="foot">
+        <div class="container">
+            <div class="split">
+                <p id="footer__element__left"><a href="#" class="footer__link"><span
+                            class="fas fa-arrow-alt-circle-up"></span> Back to top</a></p>
+                <p id="footer__element__right">By: &copy; 2021 Tamas Nemes<br><a href="https://github.com/Totemi1324"
+                        target="_blank" class="footer__link"><span class="fab fa-github icon"></span></a> <a
+                        href="https://www.youtube.com/channel/UCy364Kb1nLAqbNyRjQZNVqw" target="_blank"
+                        class="footer__link"><span class="fab fa-youtube icon"></span></a> <a
+                        href="https://twitter.com/LightcraftStud1" target="_blank" class="footer__link"><span class="fab fa-twitter icon"></span></a> <a href="https://www.instagram.com/guidewalk.geraet/" target="_blank" class="footer__link"><span class="fab fa-instagram icon"></span></a></p>
+            </div>
+            <div>
+                <p style="text-align: center;">Sponsors and supporters:</p>
+                <img src="./assets/images/sponsors.png" alt="Sponsors" class="hover__img">
+                <!-- <a href=""><img src="./images/sponsor1.png" alt=""></a>
+                        <a href=""><img src="./images/sponsor2.png" alt=""></a>
+                        <a href=""><img src="./images/sponsor3.png" alt=""></a>
+                        <a href=""><img src="./images/sponsor4.png" alt=""></a>
+                        <a href=""><img src="./images/sponsor5.png" alt=""></a>
+                        <a href=""><img src="./images/sponsor6.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="guide, guidewalk, blind, blindenführer, blindenführersystem, assistenzgerät, jugend-forscht, ki, cv" />
+    <meta name="description" content="The autonomous blind guide with AI">
+    <title>GUIDE-Walk 2.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/logo_icon.png" />
+    <script src="https://kit.fontawesome.com/c347e6666d.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./scripts/dropdown_menu.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM2FW28KFE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KM2FW28KFE');
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu__btn"><span class="fas fa-bars"></span></label>
+        <a href="#"><img src="./assets/images/logo_nav.png" alt="Logo" class="logo hover__img"></a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#project" class="nav__link" onclick="closeMenu()">Project</a></li>
+            <li class="nav__item"><a href="#materials" class="nav__link"onclick="closeMenu()">Materials</a></li>
+            <li class="nav__item"><a href="#presentation" class="nav__link"onclick="closeMenu()">Presentation</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link"onclick="closeMenu()">About</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link"onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Page header -->
+    <header class="head">
+        <div class="container spacing" id="head-container">
+            <h1 class="main-title">GUIDE-Walk 2.0</h1>
+            <p style="margin-top: 0.25em; font-size: 1.5rem; font-family: Akrobat ExtraLight, sans-serif;">The autonomous blind guide with AI</p>
+            <img src="./assets/images/product_header.png" alt="Product Header" class="hover__img header__img">
+            <a href="#project" class="btn">About the project</a>
+        </div>
+    </header>
+    <!-- Page main section -->
+    <main>
+        <section class="introduction" id="project">
+            <div class="container">
+                <h2 class="section-title">What is GUIDE-Walk?</h2>
+                <div class="split spacing">
+                    <p>The supporting infrastructure for the blind and visually impaired is constantly being expanded: floor guidance systems and traffic lights with audio signals are a matter of course for us nowadays, trained guide dogs accompany visually impaired people in their everyday lives. The new technology of artificial intelligence (AI) can help to create exciting technology with which blind people can become more independent and more easily navigate through the city on their own.<br><br><span class = "emphasis">GUIDE-Walk</span> is a digital, portable assistance system that helps blind and visually impaired people orientate themselves in traffic and improve their safety. With the use of a camera, a motion sensor and a LiDAR sensor, the device records images and information from the environment and processes them. The integrated AI learns to recognize obstacles and dangers such as cars, pedestrians, bicycles and traffic lights and warns the blind wearer via headphones.<br>The GUIDE-Walk 2.0 is the successor to a prototype, which was created last year as part of a project work for Jugend forscht (German Junior Science Contest).</p>
+                    <img class="intro__img hover__img" src="./assets/images/product_main.png" alt="Product Main">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="materials" id="materials">
+            <div class="container">
+                <h2 class="section-title">Materials</h2>
+                <article class="material spacing">
+                    <img src="./assets/images/article1.png" alt="Article 1" class="material__img hover__img" id="a1">
+                    <h3 class="material__title">Components</h3>
+                    <p class="material__description">What technology is behind the GUIDE-Walk? A visualization of the components.</p>
+                    <a href="components-en.html" class="btn">About the components</a>
+                </article>
+                <article class="material spacing m__left">
+                    <img src="./assets/images/article2.png" alt="Article 2" class="material__img hover__img" id="a2">
+                    <h3 class="material__title">The artificial intelligence</h3>
+                    <p class="material__description">The main feature of the device is the object detection AI, which can detect obstacles in real time.</p>
+                    <a href="ai-network-en.html" class="btn">About the AI</a>
+                </article>
+                <article class="material spacing">
+                    <img src="./assets/images/article3.png" alt="Article 3" class="material__img hover__img" id="a3">
+                    <h3 class="material__title">Tests of those affected</h3>
+                    <p class="material__description">In cooperation with the BBSB Oberpfalz e.V. and the OTH Regensburg, two affected people tested the device.</p>
+                    <a href="tests-en.html" class="btn">About the tests</a>
+                </article>
+                <article class="material spacing m__left">
+                    <img src="./assets/images/article4.png" alt="Article 4" class="material__img hover__img" id="a4">
+                    <h3 class="material__title">Results</h3>
+                    <p class="material__description">Data and evaluations on various aspects of the GUIDE-Walk.</p>
+                    <a href="results-en.html" class="btn">About the results</a>
+                </article>
+                <article class="material spacing">
+                    <img src="./assets/images/article5.png" alt="Article 5" class="material__img hover__img" id="a5">
+                    <h3 class="material__title">Further materials</h3>
+                    <p class="material__description">Do you have further interest in the project? Here you will find materials and information such as brochures, posters and the research paper.</p>
+                    <a href="materials-en.html" class="btn">About the materials</a>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="presentation" id="presentation">
+            <div class="container">
+                <h2 class="section-title">Presentation</h2>
+                <div class="split spacing">
+                    <div class="spacing">
+                        <p>The 2021 Jugend forscht competition largely took place virtually. The dates are:</p>
+                        <ul class="spacing">
+                            <li><span class="emphasis">Regional competition in Regensburg:</span> 05.02.2021 (For visitors: 13:30-17:00)<br><strong>Link: </strong><a href="https://app.eu.veertly.com/v/rw-jufo-r" target="_blank" class="link">Regional competition in Regensburg</a><br><strong>Results: </strong>1. place in the "technic" category!</li>
+                            <li><span class="emphasis">State competition of Bavaira:</span> 24.03.2021 - 26.03.2021<br><strong>Link: </strong><a href="https://jugend-forscht-bayern.de/landingpage/" target="_blank" class="link">State competition of Bavaria</a><br><strong>Result: </strong><ul>
+                                <li>– 1. place in the "technic" category!</li>
+                                <li>– Special prize "Entrepreneurship"</li>
+                                <li>– DRÄXLMAIER Social Media-Award</li>
+                            </ul></li>
+                            <li><span class="emphasis">56. National contest Jugend forscht:</span> 26.05.2021 - 30.05.2021<br><strong>Link: </strong><a href="https://jufo-buwe.experimenta.science" target="_blank" class="link">56. National contest Jugend forscht</a>
+                            <br><strong>Result: </strong><ul>
+                                <li>"Award for a project work in the field of technology"<br>of the Heinz und Gisela Friedrichs-Foundation<br>— 1000€</li>
+                            </ul></li>
+                        </ul>
+                        <p>Many thanks to all the great people, family, friends, sponsors and supporters for their help with the realization and presentation of the project! It has come a long way in the last few years and promises to be a real help for those affected. These successes would not have been possible without you!</p>
+                    </div>
+                    <div class="video__wrapper">
+                        <p>A short presentation video was created for the competition in which the project as a whole, as well as the tests and interviews with those affected are presented. If you are still interested in the project or if you have any questions, please leave me a <a href="#contact" class="link">message</a>.</p>
+                        <div style="margin-top: 30px;">
+                            <iframe src="https://www.youtube.com/embed/Kj6eoY1I3TU" frameborder="0"  allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="about-me" id="about">
+            <div class="container">
+                <h2 class="section-title">About the creator</h2>
+                <div class="split">
+                    <img src="./assets/images/author_main.png" alt="Author Main" class="intro__img hover__img aboutme__img">
+                    <p>My name is <span class="emphasis">Tamas Nemes</span>, I am 17 years old and a high school student in Bavaria. The possibilities of AI and its technical applications have interested me for a long time. I came up with the idea of ​​developing GUIDE-Walk through some friends of mine who themselves struggle with a visual impairment and told me about the challenges they face in everyday traffic.<br><br><i>I'm working on the the blind guidance system for two years. During this time, I learned a lot and was able to get to know the effort involved in product development. The goal that has always motivated me was to create a safe everyday helper for the blind. Two affected people who tested the device can confirm my intention: AI can and should continue to be used to help people and perhaps give them a new perspective through the "eye of the computer".</i></p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contact" id="contact">
+            <div class="container" style="padding-bottom: 2em;">
+                <h2 class="section-title">Contact</h2>
+                <p style="text-align: center;">If you have any questions, suggestions, etc., please send me a message at <a href="mailto:guidewalk.geraet@gmail.com" target="_blank" class="link">guidewalk.geraet@gmail.com</a> or feel free to use the following contact form!<br><br></p>
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <div class="spacing split">
+                        <label for="name" style="margin-top: 2rem;">Name: <span style="color: red;">*</span></label>
+                        <input type="text" name="name" id="full__name" placeholder="Vorname, Nachname" class="input__field" required>
+                        <label for="email">Email: <span style="color: red;">*</span></label>
+                        <input type="email" name="email" id="email__address" placeholder="Email-Adresse" class="input__field" required>
+                        <label for="message">Message: <span style="color: red;">*</span></label>
+                        <textarea name="message" id="message__text" rows="10" placeholder="Ihre Nachricht..." class="input__field" required></textarea>
+                        <label for="file">Choose file:</label>
+                        <input type="file" name="file" id="file__attached" class="input__field">
+                        <label for="recaptcha">Verification: <span style="color: red;">*</span></label>
+                        <div name="recaptcha" class="g-recaptcha" data-sitekey="6LeMfF8aAAAAAMvsqYL0Zqg7gY7a1w7VOLOK4EnK"></div>
+                        <div></div>
+                        <input type="submit" value="Senden" class="btn">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Page footer -->
+    <footer class="foot" id="foot">
+        <div class="container">
+            <div class="split">
+                <p id="footer__element__left"><a href="#" class="footer__link"><span class="fas fa-arrow-alt-circle-up"></span> Back to top</a></p>
+                <p id="footer__element__right">By: &copy; 2021 Tamas Nemes<br><a href="https://github.com/Totemi1324" target="_blank" class="footer__link"><span class="fab fa-github icon"></span></a> <a href="https://www.youtube.com/channel/UCy364Kb1nLAqbNyRjQZNVqw" target="_blank" class="footer__link"><span class="fab fa-youtube icon"></span></a> <a href="https://twitter.com/LightcraftStud1" target="_blank" class="footer__link"><span class="fab fa-twitter icon"></span></a> <a href="https://www.instagram.com/guidewalk.geraet/" target="_blank" class="footer__link"><span class="fab fa-instagram icon"></span></a></p>
+            </div>
+            <div>
+                <p style="text-align: center;">Sponsors and supporters:</p>
+                <img src="./assets/images/sponsors.png" alt="Sponsors" class="hover__img">
+                <!-- <a href=""><img src="./images/sponsor1.png" alt=""></a>
+                <a href=""><img src="./images/sponsor2.png" alt=""></a>
+                <a href=""><img src="./images/sponsor3.png" alt=""></a>
+                <a href=""><img src="./images/sponsor4.png" alt=""></a>
+                <a href=""><img src="./images/sponsor5.png" alt=""></a>
+                <a href=""><img src="./images/sponsor6.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
