@@ -1,0 +1,27 @@
+.head-sub {
+  text-align: left;
+  padding: 8em 0;
+}
+.header__link {
+  color: black;
+  text-decoration: none;
+  font-family: "Akrobat ExtraBold", sans-serif;
+  transition: opacity 0.25s ease-out;
+}
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.7;
+}
+.img__desc {
+    font-family: "Akrobat ExtraLight", sans-serif;
+    font-size: 0.8rem;
+    text-align: left;
+    color: #777;
+}
+.img__desc a {
+    color: #777;
+    transition: opacity 0.25s ease-out;
+}
+.img__desc a:hover {
+    opacity: 0.7;
+}
